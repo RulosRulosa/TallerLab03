@@ -1,4 +1,9 @@
 public class Producto {
-    private String codigo; //ver si se modifica el tipo de dato
+    private int codigo;
     private String tipoProducto;
+
+    public Producto(int codigo, String tipoProducto) {
+        this.codigo = codigo;
+        this.tipoProducto = tipoProducto;
+    }
 }

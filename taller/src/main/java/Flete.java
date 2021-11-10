@@ -1,4 +1,12 @@
 public class Flete {
-    private String codigoFlete; //ver si se modifica el tipo de dato
+    private int codigoFlete;
     private String descripcion;
+    private int pack;
+
+    public Flete(int codigoFlete, String descripcion, int pack) {
+        this.codigoFlete = codigoFlete;
+        this.descripcion = descripcion;
+        this.pack = pack;
+    }
+
 }
