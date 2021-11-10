@@ -8,6 +8,7 @@ public class Menu {
                 "4) agregar camión" +
                 "5) desvincular camión\n" +
                 "6) calcular valor total");
+        eleccion(opcion());
     }
     public int opcion(){
         int num;
@@ -17,12 +18,13 @@ public class Menu {
         }while(num<1||num>5);
             return num;
     }
-    public void eleccion(){
+    public void eleccion(int opcion){
         Scanner tec = new Scanner(System.in);
-        Producto producto = new Producto();
+        String fósforos = tec;
+        Producto producto = new Producto(123456, fósforos);
         switch (opcion()){
             case 1:
-                producto.setProducto(tec);
+                producto.setTipoProducto();
                 break;
             case 2:
                 break;
