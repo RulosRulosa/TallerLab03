@@ -8,5 +8,17 @@ public class Flete {
         this.descripcion = descripcion;
         this.pack = pack;
     }
+    public int generarCodigo(){
+        int codigo;
 
+        return codigo= codigoFlete;
+    }
+
+    public String getDescripcion(){
+        return descripcion;
+    }
+    public int pack(){
+
+        return pack;
+    }
 }
