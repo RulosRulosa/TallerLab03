@@ -9,7 +9,7 @@ public class Menu {
                 "5) desvincular camión\n" +
                 "6) calcular valor total");
     }
-    public int opción(){
+    public int opcion(){
         int num;
         do {
             Scanner tec = new Scanner(System.in);
@@ -17,5 +17,25 @@ public class Menu {
         }while(num<1||num>5);
             return num;
     }
-    public void
+    public void eleccion(){
+        Scanner tec = new Scanner(System.in);
+        Producto producto = new Producto();
+        switch (opcion()){
+            case 1:
+                producto.setProducto(tec);
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            default:
+                break;
+        }
+    }
 }
