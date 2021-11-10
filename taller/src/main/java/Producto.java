@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Producto {
     private int codigoProducto;
     private String tipoProducto;
@@ -7,11 +9,24 @@ public class Producto {
         this.tipoProducto = tipoProducto;
     }
     public int generarCodigo(){
-        int codigo;
+        int codigo= (int) Math.random();
 
         return codigo= codigoProducto;
     }
-    public String getTipoProducto(){
+
+    public int getCodigoProducto() {
+        return codigoProducto;
+    }
+
+    public void setCodigoProducto(int codigoProducto) {
+        this.codigoProducto = codigoProducto;
+    }
+
+    public String getTipoProducto() {
         return tipoProducto;
+    }
+
+    public void setTipoProducto(String tipoProducto) {
+        this.tipoProducto = tipoProducto;
     }
 }

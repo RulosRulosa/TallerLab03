@@ -1,0 +1,2 @@
+234567 abcd12 camionRojo OnService;
+234568 bcde23 camionAzul OutOfService;

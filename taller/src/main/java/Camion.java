@@ -16,19 +16,57 @@ public class Camion {
     }
 
     public int generarCodigo(){
-        int codigo;
+        int codigo= (int) Math.random();
 
         return codigo= codigoCamion;
     }
 
     public void setPatente(String patente) {
-        Scanner teclado = new Scanner(System.in);
-        patente= teclado.next();
         this.patente = patente;
+    }
+
+    public int getCodigoCamion() {
+        return codigoCamion;
+    }
+
+    public void setCodigoCamion(int codigoCamion) {
+        this.codigoCamion = codigoCamion;
+    }
+
+    public String getPatente() {
+        return patente;
     }
 
     public String getDescripcion() {
         return descripcion;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public Flete getFlete() {
+        return flete;
+    }
+
+    public void setFlete(Flete flete) {
+        this.flete = flete;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public boolean estadoCamion(){
